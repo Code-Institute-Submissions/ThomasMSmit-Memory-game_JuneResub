@@ -17,8 +17,8 @@ body {
 }
 
 body {
-	background: #cfcfcf;
-	font-family: 'oswald', cursive; 
+	background: #696969	; 
+	 font-family: 'oswald', cursive; 
 	font-size: 16px; 
 }
 
@@ -29,9 +29,7 @@ body {
 	flex-direction: column;
 }
 
-h1 {
-	font-family: 'lexend mega', cursive;
-}
+
 
 
 /*
@@ -41,7 +39,7 @@ h1 {
 
 .deck {
 	width: 85%;
-	background: rgb(0, 162, 255);
+	background: #000000	;
 	padding: 1rem;
 	border-radius: 4px;
 	box-shadow: 8px 9px 26px 0 rgba(61, 59, 59, 0.5);
@@ -56,7 +54,7 @@ h1 {
 	height: 3.7rem;
 	width: 3.7rem;
 	margin: 0.2rem 0.2rem;
-	background: #2e2e2e;;
+	background: #D4AF37;
 	font-size: 0;
 	color: #ffffff;
 	border-radius: 5px;
@@ -96,7 +94,7 @@ h1 {
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
-	background: #e2043b;
+	background: #880808;
 }
 
 .deck .card.disabled {
@@ -172,13 +170,13 @@ h1 {
 	width: 85%;
 	position: relative;
 	transition: all 5s ease-in-out;
-	font-family: 'lexend mega', cursive;
+	font-family: 'oswald', cursive;
 }
   
 .popup h2 {
     margin-top: 0;
 	color: #333;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: 'oswald', cursive;
     text-align: center;
 }
 
