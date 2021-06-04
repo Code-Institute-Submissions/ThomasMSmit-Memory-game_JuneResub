@@ -89,16 +89,16 @@ Color choices are based on colors that are used a lot in the Assassins Creed gam
 
 ## Wireframing ##
 
-:clipboard:
-For **wireframing** I used [Pencil Prototyping](https://pencil.evolus.vn/).
 
-View my wireframes [here](https://github.com/byIlsa/WAY/tree/master/wireframes).
+To make my **wireframes** i used [balsamiq](https://balsamiq.com/).
 
-To be more precise:
+You can find my wireframes [here](https://github.com/ThomasMSmit/Memory-game/tree/master/wireframes).
 
-* [Desktop Wireframe](https://github.com/byIlsa/WAY/blob/master/wireframes/desktop.pdf)
-* [Tablet Wireframe](https://github.com/byIlsa/WAY/blob/master/wireframes/tablet.pdf)
-* [Mobile Wireframe](https://github.com/byIlsa/WAY/blob/master/wireframes/mobile.pdf)
+Direct link to wireframes:
+
+* [Desktop Wireframe](https://github.com/ThomasMSmit/Memory-game/blob/master/wireframes/Desktop%20Wireframes%20.pdf)
+* [Tablet Wireframe](https://github.com/ThomasMSmit/Memory-game/blob/master/wireframes/Tablet%20Wireframes.pdf)
+* [Mobile Wireframe](https://github.com/ThomasMSmit/Memory-game/blob/master/wireframes/Phone%20Wireframes.pdf)
 
 ## Features ##
 ---
