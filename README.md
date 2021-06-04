@@ -2,6 +2,7 @@
 
 *Can you remember where the assassins are?*
 
+[The Assassins Brotherhood](assets/images/The-Brotherhood.jpg)
 
 ## Table of Content ##
 ---
