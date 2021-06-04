@@ -1,8 +1,8 @@
 # Find The Assassins #
 
-*Can you remember where the assassins are?*
+*Can you see where the assassins are?*
 
-[The Assassins Brotherhood](assets/images/The-Brotherhood.jpg)
+![The Assassins Brotherhood](assets/images/The-Brotherhood.jpg)
 
 ## Table of Content ##
 ---
