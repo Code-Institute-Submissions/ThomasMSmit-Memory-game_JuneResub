@@ -1,3 +1,13 @@
+/*Google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Oswald&display=swap");
+
+@font-face {
+    font-family: "assassin";
+    src: url("../css/fonts/Assassin$.ttf")
+}   
+
+
+/* General body styling */
 html {
 	box-sizing: border-box;
 }
@@ -16,11 +26,14 @@ body {
 	padding: 0;ß
 }
 
+
 body {
-	background: #696969	; 
-	 font-family: 'oswald', cursive; 
-	font-size: 16px; 
+    background-color: #A9A9A9;
+	font-family: 'oswald', cursive; 
+    font-size: 16px; 
 }
+
+
 
 .container {
 	display: flex;
@@ -29,7 +42,10 @@ body {
 	flex-direction: column;
 }
 
-
+h1 {
+    font-family: "assassin";
+    font-size: 60px;
+}
 
 
 /*

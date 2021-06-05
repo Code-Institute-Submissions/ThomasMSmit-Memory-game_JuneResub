@@ -67,8 +67,9 @@ Eventually i found [this tutorial](https://scotch.io/tutorials/how-to-build-a-me
 
 **Fonts**
 
-* The main font used across the game is [**Oswald**](https://fonts.google.com/specimen/Oswald?query=oswald) this is subject to change when i find a better fond to use.
+* The main font used across the game is [**Oswald**](https://fonts.google.com/specimen/Oswald?query=oswald) this is subject to change if i find a better fond to use.
 * The fond used for the play again button on the congratulations modal is [**Gloria Hallelujah**](https://fonts.google.com/specimen/Gloria+Hallelujah?query=glo).
+* for the title of the game i used a custom font called [assassin](https://www.dafont.com/assassin.font). This font is used for the title of the Assassins creed games. So it fits very well.
 
 **Icons**
 
