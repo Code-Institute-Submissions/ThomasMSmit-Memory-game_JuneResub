@@ -4,22 +4,22 @@
 
 ![The Assassins Brotherhood](assets/images/The-Brotherhood.jpg)
 
-## Table of Content ##
+## Table of Content ## 
 ---
-  * [UX (User Experience)](#ux--user-experience-)
-    + [Project Goals](#project-goals)
-    + [User Goals](#user-goals)
-    + [User Stories](#user-stories)
-    + [Site Owner Goals](#site-owner-goals)
-    + [User Requirements and Expectations](#user-requirements-and-expectations)
-    + [Design Choices](#design-choices)
-  * [Wireframing](#wireframing)
-  * [Features](#features)
-  * [Technologies used](#technologies-used)
-  * [Testing](#testing)
-  * [Bugs](#bugs)
-  * [Deployment](#deployment)
-  * [Credits](#credits)
+- [UX (User Experience)](#ux--user-experience-)
+  * [Project Goals](#project-goals)
+  * [User Goals](#user-goals)
+  * [User Stories](#user-stories)
+  * [Site Owner Goals](#site-owner-goals)
+  * [User Requirements and Expectations](#user-requirements-and-expectations)
+  * [Design Choices](#design-choices)
+- [Wireframing](#wireframing)
+- [Features](#features)
+- [Technologies used](#technologies-used)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
 
 
 ---
@@ -113,11 +113,9 @@ Direct link to wireframes:
 
 **Features** that will be **implemented** in the **future:**
 
-* 
-* 
-* 
-* 
-
+* Better score system, possibly online against other people. 
+* More picture cominations then just the main assassins from the game.
+* Social media pages to interact with the community.
 
 
 ## Technologies used ##
@@ -143,26 +141,10 @@ Direct link to wireframes:
 ---
 
 
-
-
-
-
-
-
 **Responsiveness**
- --- 
+ 
 
-
-
-
-
-
-
-
-
-
-
-
+**Design**
 
 
 
@@ -171,6 +153,7 @@ Direct link to wireframes:
 
 ## Bugs ##
 ---
+
 **During development**
 
 
@@ -185,29 +168,36 @@ Direct link to wireframes:
 
 ## Deployment ##
 ---
+This project is **developed** on **GitPod**, using **git** and **GitHub** to host the repository. 
 
 
 
+To deploy this repository using **GitHub Pages** the following steps were made:
+
+* Opened up **GitHub** in the **browser**.
+* Signed in using **username** and **password**.
+* Selected my **repositories**.
+* Navigated to **ThomasMSmit/Memory-game**.
+* In the top navigation clicked **settings**.
+* Clicked on the **Pages** tab on the left side of the screen.
+* Selected **Master Branch** from the **Source** dropdown menu.
+* Clicked to **confirm** my **selection**.
+* Memory-game **live** on **GitHub Pages**.
 
 
+**Running Memory-game Locally**
 
+**Cloning** Memory-game from **GitHub**:
 
+* Navigate to **ThomasMSmit/Memory-game**.
+* Go to the **code dropdown box**.
+* **Copy** the url in the **dropdown box**.
+* Using your **favorite IDE** open up your **preferred** terminal.
+* **Navigate** to your **desired** file **location**.
 
+**Copy** the following code and **input** it into your **terminal** to **clone Memory-game**.
 
-
-
-
-
-
-
-**Running WAY! Locally**
-
-
-
-
-
-
-
+```git clone https://github.com/ThomasMSmit/Memory-game```
 
 
 
@@ -215,24 +205,20 @@ Direct link to wireframes:
 ## Credits ##
 ---
 
+**Code credit**
 
-
-
-
-
+Big thanks to [Sandra Israel-Ovirih](https://github.com/sandraisrael). Her project [Memory-Game-fend](https://github.com/sandraisrael/Memory-Game-fend) helped me to start my own project. 
 
 
 
 **Credit for text used on this website**
 
-
-
-
-
+????
 
 
 **Images used**
 
+ [The-Brotherhood](https://www.reddit.com/r/assassinscreed/comments/k1qwbs/assassins_creed_wallpaper_works_with_dual_monitors/)
 
 
 
@@ -241,28 +227,30 @@ Direct link to wireframes:
 
 
 
-
-
-  
 For generating a table of content: <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 
 **Special thanks**
 
+* Big thanks to Student care. Specificly Alexander, for giving me enough time to finish my project.
+
+* A **BIG** thank you to Aukje van der Wal for helping me get back on track and showing me how you should tackle a project.
+
+
+
+**personal note**
+
+
+????
 
 
 
 
 
 
-**Personal note**
 
 
 
-
-
-
-
-
-**Site for educational purposes only!**
 
 
