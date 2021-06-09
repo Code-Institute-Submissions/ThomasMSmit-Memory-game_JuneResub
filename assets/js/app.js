@@ -11,7 +11,7 @@ let matchedCard = document.getElementsByClassName("match");
 let starsList = document.querySelectorAll(".stars li");
 let closeicon = document.querySelector(".close");
 let modal = document.getElementById("popup1")
-let openedCards = [];
+let openedCards = []
 
 
 // @description shuffles cards
@@ -45,7 +45,7 @@ function startGame(){
     // shuffle deck
     cards = shuffle(cards);
     // remove all exisiting classes from each card
-    for (var i = 0; i < cards.length; i++){
+    for (let i = 0; i < cards.length; i++){
         deck.innerHTML = "";
         [].forEach.call(cards, function(item) {
             deck.appendChild(item);
@@ -56,7 +56,7 @@ function startGame(){
     moves = 0;
     counter.innerHTML = moves;
     // reset rating
-    for (var i= 0; i < stars.length; i++){
+    for (let i= 0; i < stars.length; i++){
         stars[i].style.color = "#FFD700";
         stars[i].style.visibility = "visible";
     }
@@ -68,6 +68,10 @@ function startGame(){
     timer.innerHTML = "0 mins 0 secs";
     clearInterval(interval);
 }
+    //reset icon 
+    document.getElementById("restart-icon").onclick = function() {startGame()};
+
+
 
 
 // @description toggles open and show class to display cards
@@ -222,6 +226,9 @@ function playAgain(){
     modal.classList.remove("show");
     startGame();
 }
+
+// play again button
+document.getElementById("play-again").onclick = function() {playAgain()};
 
 
 // loop to add event listeners to each card
