@@ -211,6 +211,21 @@ function congratulations(){
     };
 }
 
+// @description start and instruction modal
+
+        // start modal on pageload 
+    $(document).ready(function(){
+        $("#startmodal").modal('show');
+        
+    });
+
+    
+        // close modal on button press
+    $("#start-game").click(function(){
+        $('#startmodal').modal('hide');
+    
+    });
+
 
 // @description close icon on modal
 function closeModal(){
