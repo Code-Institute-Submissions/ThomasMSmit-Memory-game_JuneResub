@@ -218,11 +218,10 @@ Big thanks to [Sandra Israel-Ovirih](https://github.com/sandraisrael). Her proje
 
 **Images used**
 
- [The-Brotherhood](https://www.reddit.com/r/assassinscreed/comments/k1qwbs/assassins_creed_wallpaper_works_with_dual_monitors/)
+[Images used for cards](http://wallpaperswide.com/assassins_creed-desktop-wallpapers.html)
 
 
-
-
+[The-Brotherhood](https://www.reddit.com/r/assassinscreed/comments/k1qwbs/assassins_creed_wallpaper_works_with_dual_monitors/)
 
 
 
