@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: "assassin";
-    src: url("../css/fonts/Assassin$.ttf")
+    src: url("../css/fonts/Assassin$.ttf");
 }   
 
 
@@ -116,6 +116,48 @@ h1 {
 	pointer-events: none;
 	opacity: 0.9;
 }
+
+
+
+/*
+ * Classes for card images 
+*/
+
+
+/*
+.alexios {
+    assets/images/card-images/assassins_creed_Alexios.png;
+}
+
+.altair {
+    assets/images/card-images/assassins_creed_Altair.png;
+}
+
+.connor {
+    assets/images/card-images/assassins_creed_Connor.png;
+}
+
+.edward {
+    assets/images/card-images/assassins_creed_Edward.png;
+}
+
+.eivor {
+    assets/images/card-images/assassins_creed_Eivor.png;
+}
+
+.ezio {
+    assets/images/card-images/assassins_creed_Ezio.png;
+}
+
+.ezio-rev {
+    assets/images/card-images/assassins_creed_Ezio_revelations-.png;
+}
+
+.jacob {
+    assets/images/card-images/assassins_creed_Jacob.png;
+}
+
+
 
 
 /*
