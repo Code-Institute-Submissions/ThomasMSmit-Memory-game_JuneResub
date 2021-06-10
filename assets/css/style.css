@@ -8,15 +8,18 @@
 
 
 /* General body styling */
-html {
-	box-sizing: border-box;
-}
 
 *,
 *::before,
 *::after {
 	box-sizing: inherit;
 }
+
+
+html {
+	box-sizing: border-box;
+}
+
 
 html,
 body {
@@ -34,6 +37,11 @@ body {
 }
 
 
+h1 {
+    font-family: "assassin";
+    font-size: 5rem;
+}
+
 
 .container {
 	display: flex;
@@ -42,14 +50,10 @@ body {
 	flex-direction: column;
 }
 
-h1 {
-    font-family: "assassin";
-    font-size: 5rem;
-}
 
 
 /*
- * Styles for the deck of cards
+ * Styling for the deck of cards
  */
 
 
@@ -181,8 +185,8 @@ h1 {
 	right: 0;
 	background: rgba(0, 0, 0, 0.7);
 	transition: opacity 500ms;
-	visibility: show;
-	opacity: 100;
+	visibility: visible;
+	opacity: 1;
 }
 
 .overlay:target {
@@ -190,6 +194,7 @@ h1 {
 	opacity: 1;
 }
   
+
 .popup {
 	margin: 70px auto;
 	padding: 20px;
@@ -201,26 +206,6 @@ h1 {
 	font-family: 'oswald', cursive;
 }
 
-.start-popup {
-    margin: 70px auto;
-	padding: 20px;
-	background: #ffffff;
-	border-radius: 5px;
-	width: 85%;
-	position: relative;
-	transition: all 5s ease-in-out;
-    font-family: 'oswald', cursive;
-    text-align: center;
-}
-
-.start-popup h2 {          
-    margin-top: 0;
-	color: #333;
-    font-family: 'assassin', cursive;
-    text-align: center;
-    font-size: 2.5rem;
-}
-  
 .popup h2 {
     margin-top: 0;
 	color: #333;
@@ -257,9 +242,31 @@ h1 {
     font-family: 'Oswald', cursive;
 }
 
+
+.start-popup {
+    margin: 70px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+	width: 85%;
+	position: relative;
+	transition: all 5s ease-in-out;
+    font-family: 'oswald', cursive;
+    text-align: center;
+}
+
+.start-popup h2 {          
+    margin-top: 0;
+	color: #333;
+    font-family: 'assassin', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+}
+  
+
 .show {
 	visibility: visible !important;
-	opacity: 100 !important;
+	opacity: 1 !important;
 }
 
 #starRating li {
