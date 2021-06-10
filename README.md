@@ -136,6 +136,10 @@ Direct link to wireframes:
 * [Gimp](https://www.gimp.org/)
 * [JQuery](https://jquery.com/)
 * [Popper](https://popper.js.org/)
+* [TinyPng](https://tinypng.com/)
+* [HTML/CSS validator](https://validator.w3.org/)
+* [JS validator](https://jshint.com/)
+
 
 ## Testing ##
 ---
