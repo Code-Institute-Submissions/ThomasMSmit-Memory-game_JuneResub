@@ -10,8 +10,8 @@ const stars = document.querySelectorAll(".fa-star");
 let matchedCard = document.getElementsByClassName("match");
 let starsList = document.querySelectorAll(".stars li");
 let closeicon = document.querySelector(".close");
-let modal = document.getElementById("popup1")
-let openedCards = []
+let modal = document.getElementById("popup1");
+let openedCards = [];
 
 
 // @description shuffles cards
@@ -29,7 +29,7 @@ function shuffle(array) {
     }
 
     return array;
-};
+}
 
 
 // @description shuffles cards when page is refreshed / loads
@@ -94,7 +94,7 @@ function cardOpen() {
             unmatched();
         }
     }
-};
+}
 
 
 // @description when cards match
@@ -208,7 +208,7 @@ function congratulations(){
 
         //closeicon on modal
         closeModal();
-    };
+    }
 }
 
 // @description start and instruction modal
@@ -252,4 +252,4 @@ for (var i = 0; i < cards.length; i++){
     card.addEventListener("click", displayCard);
     card.addEventListener("click", cardOpen);
     card.addEventListener("click",congratulations);
-};
+}
