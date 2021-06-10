@@ -156,11 +156,19 @@ Direct link to wireframes:
 
 **During development**
 
+[HTML validator](https://validator.w3.org/nu/)
+
+ :Error   (The element **a** must not appear as a descendant of the **button** element.) **Fixed:** by deleting all **a** elements out of the **button** elements.
+
+ 
+
+
+
 [CSS validator](https://jigsaw.w3.org/css-validator/)
 
- :Error:  (.start-overlay	Value Error: visibility **show** is not a visibility value.) Fixed by changing **show** to **visible**.
+ :Error:  (.start-overlay	Value Error: visibility **show** is not a visibility value.) **Fixed:** by changing **show** to **visible**.
 
- :Error:  ( html, body	    Parse Error ??                                             ) Fixed by deleting **html, body** and adding the values in it to **body**.
+ :Error:  ( html, body	    Parse Error ??) **Fixed:** by deleting **html, body** and adding the values in it to **body**.
 
 
 
