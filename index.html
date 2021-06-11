@@ -1,147 +1,225 @@
 <!doctype html>
-<html lang="en">
-<head>
-     <!-- meta information -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="keywords" content="Game, Assassin's Creed Memory game, Fun game, quiz"/>
-    <meta name="author" content="Thomas Smit" />
-    <meta name="Description" content="Assassin's Creed Memory game"/>
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="assets/css/style.css" /> 
+    <html lang="en">
+    <head>
+        <!-- meta information -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="Game, Assassin's Creed Memory game, Fun game, quiz"/>
+        <meta name="author" content="Thomas Smit" />
+        <meta name="Description" content="Assassin's Creed Memory game"/>
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <!-- Main CSS File -->
+        <link rel="stylesheet" href="assets/css/style.css" /> 
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
-    <title>Memory Game Assassins creed edition</title>
-</head>
-
-
+        <title>Memory Game Assassins creed edition</title>
+    </head>
 <body>
-    <!--Start + instruction modal-->
-    <div id="startmodal" class="start-overlay">
-        <div class="start-popup">
-                <h2> Welcome to, memory game Assassin'S Creed edition</h2>
-                <div class="instructions">
-                    <p>The goal of this game is to find all the matching images.</p>
-                    <p>This will be a test for your memory.</p>
-                    <p>The game starts with an equal number of cards, all the cards will be face down.</p>
-                    <p>Start the game by clicking on the first 2 cards you think are a match ( You're a genius if you can get a match with the first 2 cards you click) , the selected cards will flip over revealing an image.
-                       If the second card selected does not match the first, then both cards will be flipped back face down. 
-                    <p>Try to remember which image was in which spot to match them with their matching image when you find it.</p>
-                    <p>This game requires good observation, a strong concentration and an amazing memory to win!</p>
-                    <p>If you think you're ready for the challenge then press 'Start'!</p>
-                </div>
-                
-                <button id="start-game" type="button">Start 😄</button>
-        </div>
 
+    <!--Start + instruction modal goes here
+    
+    
+    
+    
+    
+    
+    
+    -->
+
+
+
+    <!--Game scoreboard goes here 
+
+
+
+
+
+
+
+
+    -->
+
+
+
+  <section class="memory-game">
+    <div class="memory-card" data-framework="alexios">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Alexios.png" alt="Alexios" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+    <div class="memory-card" data-framework="alexios">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Alexios.png" alt="Alexios" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
     </div>
 
-    <!--Game-->
-    <div class="container">
-        <header>
-            <h1>Find the Assassin'S</h1>
-        </header>
-
-        <section class="score-panel">
-        	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        	</ul>
-
-        	<span class="moves">0</span> Move(s)
-
-            <div class="timer">
-            </div>
-
-            <div class="restart" id="restart-icon">
-        		<i class="fa fa-repeat"></i>
-        	</div>
-        </section>
-
-        <ul class="deck" id="card-deck">
-            <li class="card" type="diamond">
-                <i class="fa fa-diamond"></i>
-            </li>
-            <li class="card" type="plane">
-                <i class="fa fa-paper-plane-o"></i>
-            </li>
-            <li class="card match" type="anchor">
-                <i class="fa fa-anchor"></i>
-            </li>
-            <li class="card" type="bolt" >
-                <i class="fa fa-bolt"></i>
-            </li>
-            <li class="card" type="cube">
-                <i class="fa fa-cube"></i>
-            </li>
-            <li class="card match" type="anchor">
-                <i class="fa fa-anchor"></i>
-            </li>
-            <li class="card" type="leaf">
-                <i class="fa fa-leaf"></i>
-            </li>
-            <li class="card" type="bicycle">
-                <i class="fa fa-bicycle"></i>
-            </li>
-            <li class="card" type="diamond">
-                <i class="fa fa-diamond"></i>
-            </li>
-            <li class="card" type="bomb">
-                <i class="fa fa-bomb"></i>
-            </li>
-            <li class="card" type="leaf">
-                <i class="fa fa-leaf"></i>
-            </li>
-            <li class="card" type="bomb">
-                <i class="fa fa-bomb"></i>
-            </li>
-            <li class="card open show" type="bolt">
-                <i class="fa fa-bolt"></i>
-            </li>
-            <li class="card" type="bicycle">
-                <i class="fa fa-bicycle"></i>
-            </li>
-            <li class="card" type="plane">
-                <i class="fa fa-paper-plane-o"></i>
-            </li>
-            <li class="card" type="cube">
-                <i class="fa fa-cube"></i>
-            </li>
-        </ul>
-
-        <!--Congratulation modal-->
-        <div id="popup1" class="overlay">
-            <div class="popup">
-                <h2> Great job !! </h2>
-                <a class="close" href=# >×</a>
-                <div class="content-1">
-                    Congratulations you won 🎉🎉
-                </div>
-                <div class="content-2">
-                    <p>Moves made: <span id=finalMove> </span></p>
-                    <p>Time: <span id=totalTime> </span> </p>
-                    <p>Rating:  <span id=starRating></span></p>
-                </div>
-                <button id="play-again" type="button">Play again 😄</button>
-            </div>
-        </div>
-
+    <div class="memory-card" data-framework="altair">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Altair.png" alt="Altaïr" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
     </div>
+    <div class="memory-card" data-framework="altair">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Altair.png" alt="Altaïr" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+
+    <div class="memory-card" data-framework="connor">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Connor.png" alt="Connor" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+    <div class="memory-card" data-framework="connor">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Connor.png" alt="Connor" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+
+    <div class="memory-card" data-framework="edward">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Edward.png" alt="Edward" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+    <div class="memory-card" data-framework="edward">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Edward.png" alt="Edward" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+
+    <div class="memory-card" data-framework="eivor">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Eivor.png" alt="Eivor" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+    <div class="memory-card" data-framework="eivor">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Eivor.png" alt="Eivor" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+
+    <div class="memory-card" data-framework="ezio_revelations">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Ezio_revelations-.png" alt="Ezio_revelations" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+    <div class="memory-card" data-framework="ezio_revelations">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Ezio_revelations-.png" alt="Ezio_revelations" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+
+     <div class="memory-card" data-framework="ezio">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Ezio.png" alt="Ezio" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+    <div class="memory-card" data-framework="ezio">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Ezio.png" alt="Ezio" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+  
+     <div class="memory-card" data-framework="jacob">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Jacob.png" alt="Jacob" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+    <div class="memory-card" data-framework="jacob">
+      <img class="front-face" src="assets/images/card-images/assassins_creed_Jacob.png" alt="Jacob" />
+      <img class="back-face" src="assets/images/card-images/Assassins-Creed-logo.png" alt="Assassins creed logo" />
+    </div>
+  
+  </section>
+
+
+     <!--Congratulation modal goes here
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
 
-
     <script src="assets/js/app.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+<!--
+   
+    <body>
+        <!--Start + instruction modal
+        <div id="startmodal" class="start-overlay">
+            <div class="start-popup">
+                    <h2> Welcome to, memory game Assassin'S Creed edition</h2>
+                    <div class="instructions">
+                        <p>The goal of this game is to find all the matching images.</p>
+                        <p>This will be a test for your memory.</p>
+                        <p>The game starts with an equal number of cards, all the cards will be face down.</p>
+                        <p>Start the game by clicking on the first 2 cards you think are a match ( You're a genius if you can get a match with the first 2 cards you click) , the selected cards will flip over revealing an image.
+                        If the second card selected does not match the first, then both cards will be flipped back face down. 
+                        <p>Try to remember which image was in which spot to match them with their matching image when you find it.</p>
+                        <p>This game requires good observation, a strong concentration and an amazing memory to win!</p>
+                        <p>If you think you're ready for the challenge then press 'Start'!</p>
+                    </div>
+                    
+                    <button id="start-game" type="button">Start 😄</button>
+            </div>
+
+        </div>
+
+
+
+
+        <!--Game
+        <div class="container">
+            <header>
+                <h1>Find the Assassin'S</h1>
+            </header>
+
+            <section class="score-panel">
+                <ul class="stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+
+                <span class="moves">0</span> Move(s)
+
+                <div class="timer">
+                </div>
+
+                <div class="restart" id="restart-icon">
+                    <i class="fa fa-repeat"></i>
+                </div>
+            </section>
+
+            
+
+
+
+            <!--Congratulation modal
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2> Great job !! </h2>
+                    <a class="close" href=# >×</a>
+                    <div class="content-1">
+                        Congratulations you won 🎉🎉
+                    </div>
+                    <div class="content-2">
+                        <p>Moves made: <span id=finalMove> </span></p>
+                        <p>Time: <span id=totalTime> </span> </p>
+                        <p>Rating:  <span id=starRating></span></p>
+                    </div>
+                    <button id="play-again" type="button">Play again 😄</button>
+                </div>
+            </div>
+
+        </div>
+
+        
+-->
