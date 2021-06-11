@@ -170,10 +170,20 @@ Direct link to wireframes:
 
 [CSS validator](https://jigsaw.w3.org/css-validator/)
 
- :Error:  (.start-overlay	Value Error: visibility **show** is not a visibility value.) **Fixed:** by changing **show** to **visible**.
+ :Error:  (.start-overlay	Value Error: visibility **show** is not a visibility value.) 
+ **Fixed:** by changing **show** to **visible**.
 
- :Error:  ( html, body	    Parse Error ??) **Fixed:** by deleting **html, body** and adding the values in it to **body**.
+ :Error:  ( html, body	    Parse Error ??) 
+ **Fixed:** by deleting **html, body** and adding the values in it to **body**.
 
+
+**Devtools**
+
+:Error: ('backface-visibility' is not supported by Safari, iOS Safari. Add '-webkit-backface-visibility' to support Safari 5.1+, iOS Safari 5+.)
+**Fixed** by adding **'-webkit-backface-visibility'** to backface styling in CSS file.
+
+:tip:   ( The "X-UA-Compatible meta element should not be specified as it is not needed.)
+**Fixed** by removing http-equiv="X-UA-Compatible from the head.
 
 
 
