@@ -116,6 +116,7 @@
     padding: 10px;
     position: absolute;
     border-radius: 5px;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
 
