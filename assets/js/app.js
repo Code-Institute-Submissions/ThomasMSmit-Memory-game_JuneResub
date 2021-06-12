@@ -14,6 +14,7 @@ let btn = document.getElementById("start-game");
 let numMatches = 0;
 
 
+
 btn.onclick = function () {
   if (targetDiv.style.display !== "none") {
     targetDiv.style.display = "none";
@@ -181,6 +182,9 @@ cards.forEach(card => card.addEventListener('click', flipCard));
         location.reload(true);
     }
 
+    
+{ 
+}
     //play again button
     document.getElementById("play-again").onclick = function() {playAgain()};
 
