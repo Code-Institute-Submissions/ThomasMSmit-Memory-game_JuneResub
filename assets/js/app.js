@@ -183,8 +183,6 @@ cards.forEach(card => card.addEventListener('click', flipCard));
     }
 
     
-{ 
-}
     //play again button
     document.getElementById("play-again").onclick = function() {playAgain()};
 
