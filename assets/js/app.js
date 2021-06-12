@@ -7,9 +7,20 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let targetDiv = document.getElementById("start-page");
+let btn = document.getElementById("start-game");
 
 
 
+btn.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } 
+  
+  else {
+    targetDiv.style.display = "block";
+  }
+};
 
 
 
