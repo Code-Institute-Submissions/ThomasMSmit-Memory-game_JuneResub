@@ -130,7 +130,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;  
  }
 
 
@@ -268,7 +268,14 @@
     }
 
 
-/*
+
+
+
+
+
+
+
+
 
     /*Google fonts*
     @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Oswald&display=swap");

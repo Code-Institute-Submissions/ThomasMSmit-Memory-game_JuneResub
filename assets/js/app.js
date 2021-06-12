@@ -4,7 +4,6 @@ let moves = 0;
 const movesCounter = document.querySelector(".moves-counter");
 let stars = document.querySelectorAll(".stars li");
 let overlay = document.getElementById("popup1");
-let closeOverlay = document.querySelector(".close");
 const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -43,7 +42,7 @@ function flipCard() {
   secondCard = this;
 
   
-  moveCounter()
+  moveCounter();
   
   checkForMatch();
 }
@@ -58,7 +57,7 @@ function checkForMatch() {
     }
     
     if (numMatches == 8){
-        congratulations()
+        congratulations();
     } 
     
     isMatch ? disableCards() : unflipCards();
