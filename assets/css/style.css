@@ -28,12 +28,16 @@
    h1 {
         font-family: "assassin";
         font-size: 5rem;
+        color: #000000;
     }
 
     .score-panel {
         text-align: left;
         margin-top: 3rem;
         margin-bottom: 1rem;
+        font-family: 'oswald', cursive;
+        font-size: 1.5rem;
+        color: #000000;
     }
 
     .score-panel .stars {
@@ -48,18 +52,13 @@
         display: inline-block;
     }
 
-    .score-panel .restart {
-        float: right;
-        cursor: pointer;
-    }
-
     .fa-star {
         color: #FFD700;
     }
 
     .timer {
         display: inline-block;
-        margin: 0 1rem;
+        margin-left: 1.5rem;
     }
 
 
@@ -223,7 +222,7 @@
 
     .popup h2 {
         margin-top: 0;
-        color: #333;
+        color: #000000;
         font-family: 'oswald', cursive;
         text-align: center;
     }
@@ -234,6 +233,7 @@
         overflow: auto;
         text-align: center;
         font-size: 1.2rem ;
+        color: #000000;
     }
 
     .popup .content-2 {
@@ -243,6 +243,7 @@
         overflow: auto;
         text-align: center;
         font-size: 1.2rem ;
+        color: #000000;
     }
 
     .show {
@@ -276,6 +277,7 @@
         font-family: "assassin";
         src: url("../css/fonts/Assassin$.ttf");
     }   
+
 
 
     /* General body styling *
