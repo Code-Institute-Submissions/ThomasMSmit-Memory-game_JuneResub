@@ -3,6 +3,8 @@
 let moves = 0;
 const movesCounter = document.querySelector(".moves-counter");
 let stars = document.querySelectorAll(".stars li");
+let overlay = document.getElementById("popup1");
+let closeOverlay = document.querySelector(".close");
 const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -140,6 +142,46 @@ cards.forEach(card => card.addEventListener('click', flipCard));
         },1000);
     }
 
+
+
+    function congratulations(){
+        if (disableCards.length == 16){
+        clearInterval(interval);
+        finalTime = timer.innerHTML;
+
+            // show congratulations overlay
+            overlay.classList.add("show");
+
+            // declare star rating variable
+            let starRating = document.querySelector(".stars").innerHTML;
+
+            //showing move, rating, time on modal
+            document.getElementById("finalMove").innerHTML = moves;
+            document.getElementById("starRating").innerHTML = starRating;
+            document.getElementById("totalTime").innerHTML = finalTime;
+
+            //closeicon on overlay
+            closeOverlay();
+        }
+    }
+
+    //close icon on overlay 
+    function closeOverlay(){
+        closeicon.addEventListener("click", function(){
+            overlay.classList.remove("show");
+            location.reload();
+        });
+    }
+
+
+    //for user to play Again 
+    function playAgain(){
+        overlay.classList.remove("show");
+        location.reload();
+    }
+
+    //play again button
+    document.getElementById("play-again").onclick = function() {playAgain()};
 
 
 
