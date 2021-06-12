@@ -159,29 +159,20 @@ cards.forEach(card => card.addEventListener('click', flipCard));
             document.getElementById("finalMove").innerHTML = moves;
             document.getElementById("starRating").innerHTML = starRating;
             document.getElementById("totalTime").innerHTML = finalTime;
-
-            //closeicon on overlay
-            closeOverlay();
+  
         }
     }
 
-    //close icon on overlay 
-    function closeOverlay(){
-        closeicon.addEventListener("click", function(){
-            overlay.classList.remove("show");
-            location.reload();
-        });
-    }
-
-
+    
     //for user to play Again 
     function playAgain(){
         overlay.classList.remove("show");
-        location.reload();
+        location.reload(true);
     }
 
     //play again button
     document.getElementById("play-again").onclick = function() {playAgain()};
+
 
 
 
