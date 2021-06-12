@@ -90,7 +90,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 
 
-// @description count player's moves
+//Count player's moves
     function moveCounter(){
         moves++;
         movesCounter.innerHTML = moves;
@@ -121,7 +121,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
     }
     
 
- // @description game timer
+ //Game timer
     let second = 0, minute = 0; hour = 0;
     let timer = document.querySelector(".timer");
     let interval;
