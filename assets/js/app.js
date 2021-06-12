@@ -95,13 +95,13 @@ cards.forEach(card => card.addEventListener('click', flipCard));
         moves++;
         movesCounter.innerHTML = moves;
        
-        // //start timer on first click
-        // if(moves == 1){
-        //     second = 0;
-        //     minute = 0; 
-        //     hour = 0;
-        //     startTimer();
-        // }
+        //start timer on first click
+        if(moves == 1){
+             second = 0;
+             minute = 0; 
+             hour = 0;
+             startTimer();
+        }
 
         // setting rates based on moves
         if (moves > 10 && moves < 14){
@@ -121,7 +121,24 @@ cards.forEach(card => card.addEventListener('click', flipCard));
     }
     
 
-    
+ // @description game timer
+    let second = 0, minute = 0; hour = 0;
+    let timer = document.querySelector(".timer");
+    let interval;
+    function startTimer(){
+        interval = setInterval(function(){
+            timer.innerHTML = minute+"mins "+second+"secs";
+            second++;
+            if(second == 60){
+                minute++;
+                second=0;
+            }
+            if(minute == 60){
+                hour++;
+                minute = 0;
+            }
+        },1000);
+    }
 
 
 
