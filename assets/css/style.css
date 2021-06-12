@@ -93,20 +93,31 @@
 
     .start-popup h2 {
         margin-top: 0;
-        color: #333;
+        color: #000000;
+        font-family: 'assassin', cursive;
+        font-size: 3rem;
+        text-align: center;
+        
+    }
+
+    .instructions {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        color: #000000;
         font-family: 'oswald', cursive;
+        font-size: 1.2rem ;
         text-align: center;
     }
 
     #start-game {
         background-color: #141214;
         padding: 0.7rem 1rem;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         display: block;
         margin: 0 auto;
         margin-top: 2.5rem;
         width: 35%;
-        font-family: 'Gloria Hallelujah', cursive;
+        font-family: 'assassin', cursive;
         color: #ffffff;
         border-radius: 5px;
         
@@ -217,11 +228,21 @@
         text-align: center;
     }
 
-    .instructions {
-        margin-top: 3rem;
-        color: #333;
-        font-family: 'oswald', cursive;
+    .popup .content-1 {
+        margin-top: 1.5rem;
+        max-height: 30%;
+        overflow: auto;
         text-align: center;
+        font-size: 1.2rem ;
+    }
+
+    .popup .content-2 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        max-height: 30%;
+        overflow: auto;
+        text-align: center;
+        font-size: 1.2rem ;
     }
 
     .show {
@@ -236,11 +257,11 @@
     #play-again {
         background-color: #141214;
         padding: 0.7rem 1rem;
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         display: block;
         margin: 0 auto;
-        width: 50%;
-        font-family: 'Gloria Hallelujah', cursive;
+        width: 35%;
+        font-family: 'assassin', cursive;
         color: #ffffff;
         border-radius: 5px;
     }
