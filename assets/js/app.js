@@ -1,7 +1,8 @@
 //jshint esversion: 6
 
-const movesCount = document.querySelector(".moves-counter");
 let moves = 0;
+const movesCount = document.querySelector(".moves-counter");
+let starsList = document.querySelectorAll(".stars li");
 
 const cards = document.querySelectorAll('.memory-card');
 
@@ -57,7 +58,7 @@ function resetBoard() {
 
 (function shuffle() {
   cards.forEach(card => {
-    let randomPos = Math.floor(Math.random() * 12);
+    let randomPos = Math.floor(Math.random() * 16);
     card.style.order = randomPos;
   });
 })();
@@ -65,17 +66,41 @@ function resetBoard() {
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 
-//count player's moves
-    function movesCounter() {
-        
-        movesCount.innerHTML ++;
-    
-        moves ++;
+ // @description count player's moves
+    function moveCounter(){
+        moves++;
+        counter.innerHTML = moves;
+
+        // //start timer on first click
+        // if(moves == 1){
+        //     second = 0;
+        //     minute = 0; 
+        //     hour = 0;
+        //     startTimer();
+        // }
+
+        // setting rates based on moves
+        if (moves > 10 && moves < 14){
+            for( i= 0; i < 3; i++){
+                if(i > 1){
+                    stars[i].style.visibility = "collapse";
+                }
+            }
+        }
+        else if (moves > 13){
+            for( i= 0; i < 3; i++){
+                if(i > 0){
+                    stars[i].style.visibility = "collapse";
+                }
+            }
+        }
     }
-   
     
 
     
+
+
+
 
 
 /*
