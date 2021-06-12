@@ -182,12 +182,17 @@ Direct link to wireframes:
 :Error: ('backface-visibility' is not supported by Safari, iOS Safari. Add '-webkit-backface-visibility' to support Safari 5.1+, iOS Safari 5+.)
 **Fixed** by adding **'-webkit-backface-visibility'** to backface styling in CSS file.
 
-:tip:   ( The "X-UA-Compatible meta element should not be specified as it is not needed.)
+:Tip:   ( The "X-UA-Compatible meta element should not be specified as it is not needed.)
 **Fixed** by removing http-equiv="X-UA-Compatible from the head.
 
+:Warning: ('content-type' header charset value should be 'utf-8'.)
+**Not** able to fix warning due to it being a network issue which i can't fix.
 
+:Warning: ('content-type' header media type value should be 'image/x-icon', not 'image/vnd.microsoft.icon'.)
+**Not** able to fix warning due to it being a network issue which i can't fix.
 
-
+:Error: (A 'cache-control' header is missing or empty.
+**Not** not able to fix error due to being a network issue also.
 
 
 
@@ -232,7 +237,9 @@ To deploy this repository using **GitHub Pages** the following steps were made:
 
 **Code credit**
 
-Big thanks to [Sandra Israel-Ovirih](https://github.com/sandraisrael). Her project [Memory-Game-fend](https://github.com/sandraisrael/Memory-Game-fend) helped me to start my own project. 
+* Thank you to [Sandra Israel-Ovirih](https://github.com/sandraisrael). Her project [Memory-Game-fend](https://github.com/sandraisrael/Memory-Game-fend) helped me to start my own project. 
+
+* Thank you to [Marina Ferreira](https://medium.com/@marina.ferreira.developer). Her [javascript tutorial](https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae) for building a memory game really gave me a good base to start my project from.
 
 
 
@@ -261,6 +268,8 @@ For generating a table of content: <small><i><a href='http://ecotrust-canada.git
 * Big thanks to Student care. Specificly Alexander, for giving me enough time to finish my project.
 
 * A **BIG** thank you to Aukje van der Wal for helping me get back on track and showing me how you should tackle a project.
+
+* A Thank you to Tutor support for helping me fix issues i wasn't able to figure out by myself.
 
 
 
