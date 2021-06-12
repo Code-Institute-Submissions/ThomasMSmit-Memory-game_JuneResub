@@ -1,14 +1,17 @@
 //jshint esversion: 6
 
 let moves = 0;
-const movesCount = document.querySelector(".moves-counter");
-let starsList = document.querySelectorAll(".stars li");
-
+const movesCounter = document.querySelector(".moves-counter");
+let stars = document.querySelectorAll(".stars li");
 const cards = document.querySelectorAll('.memory-card');
-
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+
+
+
+
+
 
 function flipCard() {
   if (lockBoard) return;
@@ -24,8 +27,13 @@ function flipCard() {
   }
 
   secondCard = this;
+
+  
+  moveCounter()
+  
   checkForMatch();
 }
+
 
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
@@ -33,12 +41,14 @@ function checkForMatch() {
   isMatch ? disableCards() : unflipCards();
 }
 
+
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
 
   resetBoard();
 }
+
 
 function unflipCards() {
   lockBoard = true;
@@ -51,10 +61,12 @@ function unflipCards() {
   }, 1500);
 }
 
+
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
+
 
 (function shuffle() {
   cards.forEach(card => {
@@ -66,11 +78,12 @@ function resetBoard() {
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 
- // @description count player's moves
+
+// @description count player's moves
     function moveCounter(){
         moves++;
-        counter.innerHTML = moves;
-
+        movesCounter.innerHTML = moves;
+       
         // //start timer on first click
         // if(moves == 1){
         //     second = 0;
@@ -103,7 +116,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 
 
-/*
+    /*
 
     //jshint esversion: 6
 
