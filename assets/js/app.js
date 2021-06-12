@@ -11,7 +11,7 @@ let lockBoard = false;
 let firstCard, secondCard;
 let targetDiv = document.getElementById("start-page");
 let btn = document.getElementById("start-game");
-
+let numMatches = 0;
 
 
 btn.onclick = function () {
@@ -49,15 +49,26 @@ function flipCard() {
 
 
 function checkForMatch() {
-  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
-  isMatch ? disableCards() : unflipCards();
+    
+    if (isMatch == true) {
+        numMatches++;
+    }
+    
+    if (numMatches == 8){
+        congratulations()
+    } 
+    
+    isMatch ? disableCards() : unflipCards();
 }
+
 
 
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
+
 
   resetBoard();
 }
@@ -145,7 +156,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 
     function congratulations(){
-        if (disableCards.length == 16){
+        if (numMatches == 8){
         clearInterval(interval);
         finalTime = timer.innerHTML;
 
