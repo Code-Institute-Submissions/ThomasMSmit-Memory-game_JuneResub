@@ -52,7 +52,7 @@ function checkForMatch() {
         numMatches++;
     }
     
-    if (numMatches == 1){
+    if (numMatches == 8){
         congratulations();
     } 
     
@@ -151,7 +151,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 
     function congratulations(){
-        if (numMatches == 1){
+        if (numMatches == 8){
         clearInterval(interval);
         finalTime = timer.innerHTML;
 
