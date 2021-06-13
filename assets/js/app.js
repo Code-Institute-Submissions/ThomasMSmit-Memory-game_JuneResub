@@ -14,14 +14,14 @@ let i;
 let finalTime;
 var $;
 
-
+//Start game button
 $("#start-game").click(function () { 
     if (targetDiv.style.display !== "none") {
     targetDiv.style.display = "none";
   } 
 });
 
-
+//Function to flip cards
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -43,7 +43,7 @@ function flipCard() {
   checkForMatch();
 }
 
-
+//Function for card match check
 function checkForMatch() {
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
@@ -60,7 +60,7 @@ function checkForMatch() {
 }
 
 
-
+//Disable cards function
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
@@ -69,7 +69,7 @@ function disableCards() {
   resetBoard();
 }
 
-
+//Unflip cards function
 function unflipCards() {
   lockBoard = true;
 
@@ -81,13 +81,13 @@ function unflipCards() {
   }, 1500);
 }
 
-
+//Reset all cards on board
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
 
-
+// Shuffle cards function
 (function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 16);
@@ -149,7 +149,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
     }
 
 
-
+    //Function for congratulations overlay to show up
     function congratulations(){
         if (numMatches == 8){
         clearInterval(interval);
