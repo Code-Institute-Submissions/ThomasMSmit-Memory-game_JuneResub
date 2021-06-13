@@ -71,6 +71,8 @@
         bottom: 0;
         left: 0;
         right: 0;
+        height: 80vh;
+        width: 80vw;
         background: rgba(0, 0, 0, 0.7);
         transition: opacity 500ms;
         visibility: visible;
@@ -84,8 +86,8 @@
         background: #ffffff;
         border-radius: 5px;
         width: 85%;
+        height: 80vh;
         position: relative;
-        transition: all 5s ease-in-out;
         font-family: 'oswald', cursive;
         text-align: center;
     }
@@ -94,24 +96,23 @@
         margin-top: 0;
         color: #000000;
         font-family: 'assassin', cursive;
-        font-size: 3rem;
         text-align: center;
         
     }
 
     .instructions {
-        margin-top: 3rem;
+        margin-top: 1rem;
         margin-bottom: 3rem;
         color: #000000;
         font-family: 'oswald', cursive;
-        font-size: 1.2rem ;
+        font-size: 0.9rem ;
         text-align: center;
     }
 
     #start-game {
         background-color: #141214;
         padding: 0.7rem 1rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         display: block;
         margin: 0 auto;
         margin-top: 2.5rem;
