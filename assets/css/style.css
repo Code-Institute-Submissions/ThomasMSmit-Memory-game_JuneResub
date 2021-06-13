@@ -32,7 +32,6 @@
 
     .score-panel {
         text-align: left;
-        margin-top: 3rem;
         margin-bottom: 1rem;
         font-family: 'oswald', cursive;
         color: #000000;
@@ -307,7 +306,7 @@
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
     .memory-game {
-        height: 65vh;
+        height: 55vh;
         width: 90vw;
         margin-bottom: 5rem;
     }
@@ -350,7 +349,7 @@
 @media (min-width: 1200px) { 
     .memory-game {
     height: 76vh;
-    width: 75vw;
+    width: 64vw;
     margin-bottom: 2rem;
     }
 
