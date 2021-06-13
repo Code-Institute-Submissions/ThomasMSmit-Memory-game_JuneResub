@@ -27,7 +27,6 @@
   /*Scoreboard styling */
    h1 {
         font-family: "assassin";
-        font-size: 5rem;
         color: #000000;
     }
 
@@ -36,7 +35,6 @@
         margin-top: 3rem;
         margin-bottom: 1rem;
         font-family: 'oswald', cursive;
-        font-size: 1.5rem;
         color: #000000;
     }
 
@@ -71,8 +69,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        height: 80vh;
-        width: 80vw;
+        width: 100vw;
         background: rgba(0, 0, 0, 0.7);
         transition: opacity 500ms;
         visibility: visible;
@@ -136,8 +133,8 @@
 
 
   .memory-game {
-    width: 700px;
-    height: 700px;
+    width: 100vw;
+    height: 46vh;
     background: #000000	;
     padding: 0.2rem;
     border-radius: 10px; 
@@ -147,7 +144,8 @@
     perspective: 1000px;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 16rem;
+    margin-bottom: 10rem;
+
   }
 
   .memory-card {
@@ -262,7 +260,6 @@
         font-size: 1.6rem;
         display: block;
         margin: 0 auto;
-        width: 35%;
         font-family: 'assassin', cursive;
         color: #ffffff;
         border-radius: 5px;
