@@ -108,11 +108,11 @@
 
     #start-game {
         background-color: #141214;
-        padding: 0.7rem 1rem;
+        padding: 0.3rem 0.5rem;
         font-size: 1.2rem;
         display: block;
         margin: 0 auto;
-        margin-top: 2.5rem;
+        margin-top: -2.5rem;
         font-family: 'assassin', cursive;
         color: #ffffff;
         border-radius: 5px;
