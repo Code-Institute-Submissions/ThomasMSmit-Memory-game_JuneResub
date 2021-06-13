@@ -178,7 +178,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
     //for user to play Again 
     function playAgain(){
         overlay.classList.remove("show");
-        location.reload(true);
+        location.reload();
     }
 
     
