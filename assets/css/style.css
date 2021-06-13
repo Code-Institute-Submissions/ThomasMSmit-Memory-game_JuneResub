@@ -1,139 +1,114 @@
 /*Google fonts*/
-    @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Oswald&display=swap");
 
-    @font-face {
-        font-family: "assassin";
-        src: url("../css/fonts/Assassin$.ttf");
-    }   
-
-
+/*Custom font*/
+@font-face {
+    font-family: "assassin";
+    src: url("../css/fonts/Assassin$.ttf");
+}   
 
 /* General styling */
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
-  
   body {
     height: 100vh;
     display: flex;
     background: #808080;
   }
-
-
-
   /*Scoreboard styling */
-   h1 {
-        font-family: "assassin";
-        color: #000000;
-        margin-top: 1rem;
+h1 {
+    font-family: "assassin";
+    color: #000000;
+    margin-top: 1rem;
     }
-
-    .score-panel {
-        text-align: left;
-        margin-bottom: 1rem;
-        font-family: 'oswald', cursive;
-        color: #000000;
+.score-panel {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-family: 'oswald', cursive;
+    color: #000000;
     }
-
-    .score-panel .stars {
-        margin: 0;
-        padding: 0;
-        display: inline-block;
-        margin: 0 5px 0 0;
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
     }
-
-    .score-panel .stars li {
-        list-style: none;
-        display: inline-block;
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
     }
-
-    .fa-star {
-        color: #FFD700;
-    }
-
-    .timer {
-        display: inline-block;
-        margin-left: 1.5rem;
-    }
-
-
+.fa-star {
+    color: #FFD700;
+}
+.timer {
+    display: inline-block;
+    margin-left: 1.5rem;
+}
 
 /* Start + instruction overlay styling */
-
-    .start-overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background: rgba(0, 0, 0, 0.7);
-        transition: opacity 500ms;
-        visibility: visible;
-        opacity: 1;
-        z-index: 1;
-    }
-
-    .start-popup {
-        margin: 0.6rem auto;
-        padding: 20px;
-        background: #ffffff;
-        border-radius: 5px;
-        width: 95vw;
-        height: 97vh;
-        position: relative;
-        font-family: 'oswald', cursive;
-        text-align: center;
-    }
-
-    .start-popup h2 {
-        margin-top: 0;
-        color: #000000;
-        font-family: 'assassin', cursive;
-        text-align: center;
-        
-    }
-
-    .instructions {
-        margin-bottom: 3rem;
-        color: #000000;
-        font-family: 'oswald', cursive;
-        font-size: 0.8rem ;
-        text-align: center;
-    }
-
-    #start-game {
-        background-color: #141214;
-        padding: 0.3rem 0.5rem;
-        font-size: 1.1rem;
-        display: block;
-        margin: 0 auto;
-        margin-top: -1rem;
-        font-family: 'assassin', cursive;
-        color: #ffffff;
-        border-radius: 5px;
-        
-    }
-
-
+.start-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+.start-popup {
+    margin: 0.6rem auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 95vw;
+    height: 97vh;
+    position: relative;
+    font-family: 'oswald', cursive;
+    text-align: center;
+}
+.start-popup h2 {
+    margin-top: 0;
+    color: #000000;
+    font-family: 'assassin', cursive;
+    text-align: center;
+}
+.instructions {
+    margin-bottom: 3rem;
+    color: #000000;
+    font-family: 'oswald', cursive;
+    font-size: 0.8rem ;
+    text-align: center;
+}
+#start-game {
+    background-color: #141214;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: -1rem;
+    font-family: 'assassin', cursive;
+    color: #ffffff;
+    border-radius: 5px;
+}
 
 /* Game styling */
-    
-  .container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;  
- }
-
-
-  .memory-game {
+}
+.memory-game {
     width: 100vw;
     height: 46vh;
-    background: #000000	;
+    background: #000000  ;
     padding: 0.2rem;
     border-radius: 10px; 
     box-shadow: 8px 9px 26px 0 rgba(61, 59, 59, 0.5);
@@ -143,10 +118,8 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom: 10rem;
-
-  }
-
-  .memory-card {
+}
+.memory-card {
     width: calc(25% - 10px);
     height: calc(25% - 10px);
     margin: 5px;
@@ -155,19 +128,16 @@
     transform-style: preserve-3d;
     transition: transform .5s;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  }
-  
-  .memory-card:active {
+}
+.memory-card:active {
     transform: scale(0.97);
     transition: transform .2s;
-  }
-  
-  .memory-card.flip {
+}
+.memory-card.flip {
     transform: rotateY(180deg);
-  }
-  
-  .front-face,
-  .back-face {
+}
+.front-face,
+.back-face {
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -175,159 +145,130 @@
     border-radius: 5px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
-
-  
-  .front-face {
+}
+.front-face {
     transform: rotateY(180deg);
     background: #D4AF37;
-  }
-
-  .back-face {
+}
+.back-face {
     background: #023ee4;
-  }
-  
+}
+
 /* Congratulation overlay styling */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 85%;
+    position: relative;
+    font-family: 'oswald', cursive;
+}
+.popup h2 {
+    margin-top: 0;
+    color: #000000;
+    font-family: 'oswald', cursive;
+    text-align: center;
+}
+.popup .content-1 {
+    margin-top: 1.5rem;
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+    font-size: 1.2rem ;
+    color: #000000;
+}
+.popup .content-2 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+    font-size: 1.2rem ;
+    color: #000000;
+}
+.show {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+#starRating li {
+    display: inline-block;
+}
+#play-again {
+    background-color: #141214;
+    padding: 0.7rem 1rem;
+    font-size: 1.6rem;
+    display: block;
+    margin: 0 auto;
+    font-family: 'assassin', cursive;
+    color: #ffffff;
+    border-radius: 5px;
+}
 
-    .overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.7);
-        transition: opacity 500ms;
-        visibility: hidden;
-        opacity: 0;
-    }
-    
-    .overlay:target {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .popup {
-        margin: 70px auto;
-        padding: 20px;
-        background: #ffffff;
-        border-radius: 5px;
-        width: 85%;
-        position: relative;
-        font-family: 'oswald', cursive;
-    }
-
-    .popup h2 {
-        margin-top: 0;
-        color: #000000;
-        font-family: 'oswald', cursive;
-        text-align: center;
-    }
-
-    .popup .content-1 {
-        margin-top: 1.5rem;
-        max-height: 30%;
-        overflow: auto;
-        text-align: center;
-        font-size: 1.2rem ;
-        color: #000000;
-    }
-
-    .popup .content-2 {
-        margin-top: 3rem;
-        margin-bottom: 2rem;
-        max-height: 30%;
-        overflow: auto;
-        text-align: center;
-        font-size: 1.2rem ;
-        color: #000000;
-    }
-
-    .show {
-        visibility: visible !important;
-        opacity: 1 !important;
-    }
-
-    #starRating li {
-        display: inline-block;
-    }
-
-    #play-again {
-        background-color: #141214;
-        padding: 0.7rem 1rem;
-        font-size: 1.6rem;
-        display: block;
-        margin: 0 auto;
-        font-family: 'assassin', cursive;
-        color: #ffffff;
-        border-radius: 5px;
-    }
-
-
-
-/****** Media queries
-    ***************************/
-
+/*Media queries*/
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
     .score-panel {
         font-size: 1.1rem;
     }
-
     .memory-game {
-       height: 50vh;
-       width: 90vw; 
+        height: 50vh;
+        width: 90vw; 
     }
-
     .start-popup {
         height: 59vh;
     }
-
     .popup {
         width: 95vw;
     }
-
     #play-again {
         padding: 0.3rem 0.5rem;
         font-size: 1.5rem;
     }
-
     #start-game {
         font-size: 1.5rem;
     }
-
     .instructions {
         font-size: 1rem;
     }
 }
 
-
-
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
     .memory-game {
-        height: 55vh;
-        width: 90vw;
-        margin-bottom: 5rem;
+        height: 80vh;
+        width: 75vw;
+        margin-bottom: 4rem;
+        margin-top: 1rem;
     }
-
     .instructions {
         font-size: 1.2rem;
     }
-
     .start-popup {
         height: 56vh;
     } 
-    
     #start-game {
         font-size: 1.7rem;
     }
-
     .popup {
         width: 95vw;
     }
-
-    
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -337,31 +278,19 @@
         width: 90vw;
         margin-bottom: 2rem;
     }
-
     .start-popup {
     height: 48vh;
     }
-
-
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
     .memory-game {
-    height: 76vh;
-    width: 64vw;
-    margin-bottom: 2rem;
+        height: 76vh;
+        width: 64vw;
+        margin-bottom: 2rem;
     }
-
     .score-panel {
         font-size: 1.2rem;
     }
-}  
-
-
-
-
-
-
-
-   
+}
