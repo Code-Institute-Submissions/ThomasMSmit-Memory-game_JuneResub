@@ -220,7 +220,7 @@ Features that will be implemented in the future:
 
 - Fixed: by adding semicolons in the right places and giving the undefined variables
 
-- Error: 
+- Error:
 (function playAgain() {overlay.classList.remove("show");location.reload(true);})
 
 - Description: When checking code with JS hint an error concerning this piece of code came up. The word reload was crossed out came up. After a quick google search a solution was found.
@@ -239,7 +239,7 @@ Features that will be implemented in the future:
 
 - Description: When checking the DevTools for issues this warning came up.
 
-Not able to fix warning due to it probably being a network issue which I can't fix.
+- Not able to fix warning due to it probably being a network issue which I can't fix.
 
 - Warning: ('content-type' header media type value should be 'image/x-icon', not 'image/vnd.microsoft.icon'.)
 
@@ -283,7 +283,7 @@ Cloning Memory-game from GitHub:
 
 Copy the following code and input it into your terminal to clone Memory-game.
 
-git clone https://github.com/ThomasMSmit/Memory-game
+git clone <https://github.com/ThomasMSmit/Memory-game>
 
 ## Credits ##
 
