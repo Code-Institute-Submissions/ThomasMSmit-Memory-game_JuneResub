@@ -222,6 +222,14 @@ h1 {
 
 /*Media queries*/
 
+
+/*Extra small devices(portrait phones, 320px and up*/
+@media(min-width: 320px) and (max-width: 1366px) {
+    .front-face{
+        padding: 6px;
+    }
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
     .score-panel {
@@ -232,7 +240,7 @@ h1 {
         width: 90vw; 
     }
     .start-popup {
-        height: 59vh;
+        height: 60vh;
     }
     .popup {
         width: 95vw;
@@ -253,7 +261,7 @@ h1 {
 @media (min-width: 768px) { 
     .memory-game {
         height: 80vh;
-        width: 75vw;
+        width: 95vw;
         margin-bottom: 4rem;
         margin-top: 1rem;
     }
@@ -287,10 +295,22 @@ h1 {
 @media (min-width: 1200px) { 
     .memory-game {
         height: 76vh;
-        width: 64vw;
+        width: 58vw;
         margin-bottom: 2rem;
     }
     .score-panel {
         font-size: 1.2rem;
     }
+
+    .start-popup {
+        height: 66vh;
+    }
+}
+
+/* For laptop screens*/ 
+@media (min-height: 768px) {
+    .start-popup {
+        height: 66vh;
+    }
+
 }
